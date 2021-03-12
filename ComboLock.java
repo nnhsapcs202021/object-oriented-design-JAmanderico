@@ -25,16 +25,29 @@ public class ComboLock
     {
         if (ticks >= 0 && ticks <= 39)
         {
-            dial += ticks;
+            dial -= ticks;
+            
+            if (dial < 0)
+            {
+                dial = 39 + dial;
+            }
         }
+        System.out.println(dial);
     }
     
     public void turnCounterclockwise(int ticks)
     {
-        if(ticks >= 0 && ticks <= 30)
+        if(ticks > 0 && ticks <= 39)    
         {
-            dial -= ticks;
+            dial += ticks;
+            
+            if( dial >= 40 )
+            {
+                int overTurn = dial - 40;
+                dial = overTurn;
+            }
         }
+        System.out.println(dial);
     }
     
     public boolean open()
