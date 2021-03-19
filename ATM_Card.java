@@ -5,29 +5,25 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ATM_Card
+public class ATM_Card extends Card
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    int cardNum;
+    int pin;
+    String name;
     /**
      * Constructor for objects of class ATM_Card
      */
-    public ATM_Card()
+    public ATM_Card(String n, int cardNumber, int pinNum)
     {
-        // initialise instance variables
-        x = 0;
+        super(n);
+        this.name = n;
+        this.cardNum = cardNumber;
+        this.pin = pinNum;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    @Override
+    public String toString()
     {
-        // put your code here
-        return x + y;
+        return "Card holder: " + this.name + "\nCard Number: " + this.cardNum + "\nPIN: " + this.pin;
     }
 }

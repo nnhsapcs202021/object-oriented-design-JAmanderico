@@ -2,19 +2,23 @@
 /**
  * Write a description of class StudentIDCard here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author jamanderico
+ * @version 3/
  */
-public class StudentIDCard
+public class StudentIDCard extends Card
 {
-    private String idNumber;
-    public StudentIDCard(String id)
+    private int idNumber;
+    private String name;
+    public StudentIDCard(String n, int id)
     {
-       idNumber = id;
+        super(n);
+        this.name = n;
+        this.idNumber = id;
     }
     
+    @Override
     public String toString()
     {
-        return null;
+        return "Card Holder: " + this.name +"\n"+ "ID Number: " + this.idNumber;
     }
 }

@@ -2,13 +2,12 @@
 /**
  * Write a description of class Card here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author jamanderico
+ * @version 3/19/21
  */
 public class Card
 {
     private String name;
-
     public Card()
     {
         name = "";
