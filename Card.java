@@ -8,6 +8,7 @@
 public class Card
 {
     private String name;
+    private String cardType;
     public Card()
     {
         name = "";
@@ -33,3 +34,7 @@ public class Card
         return "Card holder: " + name;
     }
 }
+
+
+
+

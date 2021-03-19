@@ -19,6 +19,9 @@ public class StudentIDCard extends Card
     @Override
     public String toString()
     {
-        return "Card Holder: " + this.name +"\n"+ "ID Number: " + this.idNumber;
+        return super.toString() + "\nID Number: " + this.idNumber;
     }
 }
+
+
+

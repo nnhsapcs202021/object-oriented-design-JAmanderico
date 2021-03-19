@@ -9,7 +9,7 @@ public class CardTester
 {
     public static void main()
     {
-        ATM_Card card = new ATM_Card("John", 666, 333);
+        Card card = new ATM_Card("John", 666, 333);
         System.out.println( card.toString() );
     }
 }

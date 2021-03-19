@@ -24,6 +24,11 @@ public class ATM_Card extends Card
     @Override
     public String toString()
     {
-        return "Card holder: " + this.name + "\nCard Number: " + this.cardNum + "\nPIN: " + this.pin;
+        return super.toString() + "\nCard Number: " + this.cardNum
+               + "\nPIN: " + this.pin;
     }
 }
+
+
+
+

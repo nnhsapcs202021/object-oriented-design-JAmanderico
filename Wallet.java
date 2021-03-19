@@ -14,7 +14,7 @@ public class Wallet
         this.cardA = a;
         this.cardB = b;
     }
-    
+
     public void addCard(Card q)
     {
         if( cardA == null )
@@ -33,7 +33,10 @@ public class Wallet
 
     public String toString()
     {
+        String returnVal = "{ ";
         
-        return "{";
+        return "{ " + cardA.toString() + " | " + cardB.toString() 
+                + " }";
     }
 }
+
