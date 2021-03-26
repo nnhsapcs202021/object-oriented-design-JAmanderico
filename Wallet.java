@@ -33,8 +33,6 @@ public class Wallet
 
     public String toString()
     {
-        String returnVal = "{ ";
-        
         return "{ " + cardA.toString() + " | " + cardB.toString() 
                 + " }";
     }

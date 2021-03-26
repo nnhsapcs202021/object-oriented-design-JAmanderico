@@ -17,6 +17,12 @@ public class StudentIDCard extends Card
     }
     
     @Override
+    public boolean isExpired()
+    {
+        return false;
+    }
+    
+    @Override
     public String toString()
     {
         return super.toString() + "\nID Number: " + this.idNumber;

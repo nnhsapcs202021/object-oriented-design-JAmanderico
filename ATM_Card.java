@@ -22,6 +22,12 @@ public class ATM_Card extends Card
     }
     
     @Override
+    public boolean isExpired()
+    {
+        return false;
+    }
+    
+    @Override
     public String toString()
     {
         return super.toString() + "\nCard Number: " + this.cardNum
